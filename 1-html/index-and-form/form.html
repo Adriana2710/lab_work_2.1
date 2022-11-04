@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: auto;
+        }
+        main {
+            margin: 10px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        .strong, button {
+            font-weight: bold;
+        }
+        button {
+            color: white;
+            background-color: lightcoral;
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        nav, footer {
+            background-color: lightgrey; 
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+        nav {
+            margin-bottom: 5px;
+        }
+        nav a {
+            text-decoration: none;
+            margin-right: 10px;
+            color: black;
+        }
+    </style>
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </header>
+    <main>
+        <form method="POST" action="http://localhost:3000/profile">
+            <div>
+                <label for="fName" class="strong">1 - First Name: </label>
+                <input type="text" name="fName">
+            </div>
+            <div>
+                <label for="lName" class="strong">2 - Last Name: </label>
+                <input type="text" name="lName">
+            </div>
+            <div>
+                <label for="phone" class="strong">3 - Phone Number: </label>
+                <input type="number" name="phone">
+            </div>
+            <div>
+                <label for="address" class="strong">4 - Address: </label>
+                <input type="text" name="address">
+            </div>
+            <div>
+                <label for="skype" class="strong">5 - Skype: </label>
+                <input type="text" name="skype">
+            </div>
+            <div>
+                <p class="strong">6 - Please select your Country:</p>
+                <input type="radio" id="aus" value="Australia" name="country">
+                <label for="aus">Australia </label>
+                <input type="radio" id="nz" value="NewZealand" name="country">
+                <label for="nz">New Zealand</label>    
+            </div>
+            <div>
+                <p class="strong">7 - Please choose your preferences:</p>
+                <input type="checkbox" id="fashion" name="fashion" value="fashion">
+                <label for="fashion">Fashion</label>
+                <input type="checkbox" id="tech" name="tech" value="tech">
+                <label for="tech">Technology</label>
+                <input type="checkbox" id="games" name="games" value="games">
+                <label for="games">Games</label>
+                <input type="checkbox" id="news" name="news" value="news">
+                <label for="news">News around the world</label>
+            </div>
+            <div>
+                <label for="contact" class="strong">8 - How can we contact you?</label>
+                <select name="contact" id="contact">
+                    <option value="phone">By Phone</option>
+                    <option value="email">By Email</option>
+                    <option value="address">Letter to my address</option>
+                    <option value="skype">Skype</option>
+                </select>
+            </div>
+            <button type="submit">Submit form</button>
+        </form>
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+</body>

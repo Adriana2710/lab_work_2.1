@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .skills-container {
+    display: flex;
+}
+
+.container {
+  min-height: 93%;
+}
+
+header {
+    background-color: #FFA07A;
+
+}
+
+.aside-main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 8px;
+    margin: 5px;
+}
+
+aside {
+    width: 300px;
+}
+
+.aside-main img {
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.aside-main p {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.aside-titles {
+    background-color: #FFDAB9;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.aside-details { 
+    padding-left: 8px;
+}
+
+.skill {
+    font-weight: bold;
+}
+
+.skills-container {
+    margin: 0 15px;
+    justify-content: space-around;
+}
+
+main {
+    padding-left: 20px;
+}
+
+.background, .goals {
+    border-bottom: 1px solid lightcoral;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-img {
+    width: 250px;
+}
+
+
+
+footer {
+    text-align: center;
+    margin: 5px 0;
+    padding: 20px;
+    background-color: #FFA07A
+
+}
+
+
+@media screen and (max-width: 375px) {
+	.container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 375px;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
